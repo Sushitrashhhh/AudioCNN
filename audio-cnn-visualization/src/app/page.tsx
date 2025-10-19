@@ -142,7 +142,7 @@ export default function HomePage() {
           ),
         );
 
-        const response = await fetch("https://sushitrashhhh--audio-cnn-inference-audioclassifier-inference.modal.run/", {
+        const response = await fetch("inference_url_here(you'll find it @ modal's app section and copy paste the Url from there)", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ audio_data: base64String }),
