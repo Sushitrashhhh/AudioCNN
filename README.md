@@ -17,12 +17,15 @@ The Audio CNN Visualizer consists of two main components:
 
 - Upload and analyze WAV audio files.
 - Real-time audio classification with confidence scores.
+<img width="1901" height="645" alt="image" src="https://github.com/user-attachments/assets/221624a2-8e21-49f3-96fb-692ce8a646a4" />
 - Interactive visualizations, including:
   - Input spectrograms
   - Audio waveforms
   - Convolutional layer feature maps
   - Internal layer activations
+<img width="1898" height="575" alt="image" src="https://github.com/user-attachments/assets/b7749a39-a067-49d5-976c-d4bacd520183" />
 - Color-coded feature map representations.
+<img width="1899" height="801" alt="image" src="https://github.com/user-attachments/assets/4c16204b-17e3-471a-a21e-4076c7a018a6" />
 - Responsive design built with Tailwind CSS.
 
 ---
