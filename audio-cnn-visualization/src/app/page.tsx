@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import ColorScale from "~/components/ColorScale";
 import FeatureMap from "~/components/FeatureMap";
@@ -187,6 +186,7 @@ export default function HomePage() {
             <div className="relative inline-block">
               <input
                 type="file"
+                placeholder="file"
                 accept=".wav"
                 id="file-upload"
                 onChange={handleFileChange}

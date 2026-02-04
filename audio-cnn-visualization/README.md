@@ -1,29 +1,77 @@
-# Create T3 App
+# Audio CNN Visualizer
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+A web-based visualization tool for analyzing audio classifications using Convolutional Neural Networks (CNNs). This project provides an interactive interface to upload audio files, visualize CNN layer activations, and understand how the model processes audio data for classification.
 
-## What's next? How do I make an app with this?
+---
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## Overview
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+The Audio CNN Visualizer consists of two main components:
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+- **Backend (Python/Modal):** A trained CNN model that classifies environmental sounds from the ESC-50 dataset.
+- **Frontend (Next.js):** A web interface that displays predictions, spectrograms, waveforms, and feature maps from each layer of the CNN.
 
-## Learn More
+---
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Features
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+- Upload and analyze WAV audio files.
+- Real-time audio classification with confidence scores.
+<img width="1901" height="645" alt="image" src="https://github.com/user-attachments/assets/221624a2-8e21-49f3-96fb-692ce8a646a4" />
+- Interactive visualizations, including:
+  - Input spectrograms
+  - Audio waveforms
+  - Convolutional layer feature maps
+  - Internal layer activations
+<img width="1898" height="575" alt="image" src="https://github.com/user-attachments/assets/b7749a39-a067-49d5-976c-d4bacd520183" />
+- Color-coded feature map representations.
+<img width="1899" height="801" alt="image" src="https://github.com/user-attachments/assets/4c16204b-17e3-471a-a21e-4076c7a018a6" />
+- Responsive design built with Tailwind CSS.
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+---
 
-## How do I deploy this?
+## Technology Stack
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+### Backend
+- Python 3.9+
+- PyTorch: Deep learning framework for model training and inference.
+- Torchaudio: Audio processing library.
+- Modal: Serverless compute platform for model deployment.
+- FastAPI: API framework for inference endpoints.
+- Librosa: Audio analysis library.
+- Soundfile: Audio file I/O.
+
+### Frontend
+- Next.js 15.2.3: React framework for production.
+- React 19.0.0: UI library.
+- TypeScript 5.8.2: Typed JavaScript.
+- Tailwind CSS 4.0.15: Utility-first CSS framework.
+- Radix UI: Headless UI components.
+- Lucide React: Icon library.
+
+---
+
+## Installation
+
+### Prerequisites
+- Node.js 18 or higher
+- Python 3.9 or higher
+- Modal CLI (for backend deployment)
+
+### Frontend Setup
+```bash
+# Clone the repository
+git clone <repository-url>
+cd audio-cnn-visualization
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
