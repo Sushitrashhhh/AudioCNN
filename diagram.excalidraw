@@ -1,7 +1,7 @@
 {
   "type": "excalidraw",
   "version": 2,
-  "source": "https://excalidraw.com",
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
   "elements": [
     {
       "id": "0ZDjHMCsgWjNIRIUQNGz3",
@@ -74555,11 +74555,11 @@
       "index": "c012",
       "roundness": null,
       "seed": 1209524218,
-      "version": 2188,
-      "versionNonce": 409394022,
+      "version": 2247,
+      "versionNonce": 896011338,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1750771660175,
+      "updated": 1761050831734,
       "link": null,
       "locked": false,
       "text": "ReLU is an example of an activation function.\n\nReLU allows only positive values to pass through\n[ 12, -5, 0, 8, -2 ] becomes [ 12, 0, 0, 8, 0 ]\n\nWhy? For now just know that they introduce non-\nlinearity, which lets the network go beyond simple\nlinear patterns and learn complex functions.",
@@ -108100,8 +108100,7 @@
     "gridSize": 20,
     "gridStep": 5,
     "gridModeEnabled": false,
-    "viewBackgroundColor": "#ffffff",
-    "lockedMultiSelections": {}
+    "viewBackgroundColor": "#ffffff"
   },
   "files": {
     "4c9a17d6665367f575f8f8c99375d679570e4419": {
