@@ -46,4 +46,6 @@ yarn-error.log*
 .idea
 
 #readme file
-../readme
+README.md
+
+/.venv/
