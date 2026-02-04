@@ -150,7 +150,7 @@ export default function HomePage() {
           throw new Error(`API error ${response.statusText}`);
         }
 
-        const data: ApiResponse = await response.json();
+        const data = await response.json() as ApiResponse;
         setVizData(data);
     } catch (err: unknown) {
       setError(
