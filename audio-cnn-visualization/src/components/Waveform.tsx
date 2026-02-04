@@ -1,5 +1,5 @@
 const Waveform = ({ data, title }: { data: number[]; title: string }) => {
-  if (!data || data.length === 0) return null;
+  if (!data?.length) return null;
 
   const width = 600;
   const height = 300;

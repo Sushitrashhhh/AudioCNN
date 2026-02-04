@@ -19,9 +19,8 @@ interface LayerData {
   values: number[][];
 }
 
-interface VisualizationData {
-  [layerName: string]: LayerData;
-}
+type VisualizationData = Record<string, LayerData>;
+
 
 interface WaveformData {
   values: number[];
@@ -104,7 +103,7 @@ function splitLayers(visualization: VisualizationData) {
       const [parent] = name.split(".");
       if (parent === undefined) continue;
 
-      if (!internals[parent]) internals[parent] ??= [];
+      internals[parent] ??= [];
       internals[parent].push([name, data]);
     }
   }
@@ -153,10 +152,10 @@ export default function HomePage() {
 
         const data: ApiResponse = await response.json();
         setVizData(data);
-      } catch (err) {
-        setError(
-          err instanceof Error ? err.message : "An unknown error occured",
-        );
+    } catch (err: unknown) {
+      setError(
+        err instanceof Error ? err.message : "An unknown error occured",
+      );
       } finally {
         setIsLoading(false);
       }
