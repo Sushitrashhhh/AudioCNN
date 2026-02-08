@@ -179,6 +179,8 @@ export default function HomePage() {
           </h1>
           <p className="text-md mb-8 text-stone-600">
             Upload a WAV file to see the model&apos;s predictions and feauture maps
+            <br />
+            <p>Upload files less than 10MB else it'll be out of memory</p>
           </p>
 
           <div className="flex flex-col items-center">
